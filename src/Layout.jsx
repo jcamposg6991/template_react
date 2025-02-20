@@ -5,7 +5,15 @@ import NotFound from "./views/NotFound.jsx"
 
 const Layout = () => {
   return (
-    <div>Layout</div>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home/>}></Route>
+          <Route exact path='/*' element={<NotFound/>}></Route>
+        </Routes>
+      </BrowserRouter>
+
+    </div>
   )
 }
 
