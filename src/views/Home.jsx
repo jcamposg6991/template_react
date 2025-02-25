@@ -20,6 +20,7 @@ const Home = () => {
       Home
       <Navbar/>
       <button onClick={handlerClick}>Navego a LogIn</button>
+      <h5>Va mostrar los nombres guardados en contexto global: {store.personas}</h5>
     </div>
   )
 }
