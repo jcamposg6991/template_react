@@ -3,8 +3,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from "./views/Home.jsx"
 import NotFound from "./views/NotFound.jsx"
 import LogIn from './views/LogIn.jsx'
+import injectContext from './js/store/appContext.js'
 
 const Layout = () => {
+
+  const basename = process.env.BASENAME || "";
+  
   return (
     <div>
       <BrowserRouter>
@@ -19,4 +23,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default injectContext(Layout)
