@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { Context } from '../js/store/appContext.js'
 import Navbar from '../components/Navbar.jsx'
 import { useNavigate } from 'react-router-dom'
 
