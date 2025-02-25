@@ -8,10 +8,10 @@ import injectContext from './js/store/appContext.js'
 const Layout = () => {
 
   const basename = process.env.BASENAME || "";
-  
+
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
           <Route exact path='/*' element={<NotFound/>}></Route>
