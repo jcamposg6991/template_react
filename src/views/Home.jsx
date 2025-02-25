@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
-  const navigate = useNavigate()
+  const { store, actions } = useContext(Context)
 
+  const navigate = useNavigate()
 
   const handlerClick = () =>{
     console.log("este boton va a login");
