@@ -4,9 +4,12 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
+  const navigate = useNavigate()
+
 
   const handlerClick = () =>{
-    console.log("estoy funcionando");
+    console.log("este boton va a login");
+    navigate("/login")
     
   }
 
@@ -14,7 +17,7 @@ const Home = () => {
     <div>
       Home
       <Navbar/>
-      <button onClick={handlerClick}></button>
+      <button onClick={handlerClick}>Navego a LogIn</button>
     </div>
   )
 }
