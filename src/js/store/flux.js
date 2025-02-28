@@ -34,7 +34,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ ...getStore(), registerStatus: true });
 					}
 
-					return responseData;
 				} catch (error) {
 					console.error("Error:", error);
 					throw error;
