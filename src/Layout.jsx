@@ -4,6 +4,7 @@ import Home from "./views/Home.jsx"
 import NotFound from "./views/NotFound.jsx"
 import LogIn from './views/LogIn.jsx'
 import injectContext from './js/store/appContext.js'
+import Register from './views/Register.jsx'
 
 const Layout = () => {
 
@@ -16,6 +17,7 @@ const Layout = () => {
           {/* <Route exact path='/' element={<Home/>}></Route> */}
           <Route exact path='/*' element={<NotFound/>}></Route>
           <Route exact path='/' element={<LogIn/>}></Route>
+          <Route exact path='/register' element={<Register/>}></Route>
         </Routes>
       </BrowserRouter>
 
