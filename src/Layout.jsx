@@ -16,8 +16,8 @@ const Layout = () => {
         <Routes>
           {/* <Route exact path='/' element={<Home/>}></Route> */}
           <Route exact path='/*' element={<NotFound/>}></Route>
-          <Route exact path='/' element={<LogIn/>}></Route>
-          <Route exact path='/register' element={<Register/>}></Route>
+          <Route exact path='/login' element={<LogIn/>}></Route>
+          <Route exact path='/' element={<Register/>}></Route>
         </Routes>
       </BrowserRouter>
 
