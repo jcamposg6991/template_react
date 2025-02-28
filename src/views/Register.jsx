@@ -18,6 +18,8 @@ const Register = () => {
 
     const handleRegister = () => {
         const { name, email, password } = formData;
+        console.log("ENTRA EN HANDLER REGISTER");
+        
         actions.register(name, email, password);
       }; 
 
@@ -27,7 +29,7 @@ const Register = () => {
         <h3>Test store: {store.personas}</h3>
 
         {store.registerStatus && <h4>Registro Exitoso</h4>}
-        
+
         <form>
         <div>
             <label htmlFor="name">Nombre:</label>
