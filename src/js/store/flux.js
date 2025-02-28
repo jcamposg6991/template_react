@@ -1,7 +1,8 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			personas: ["Pedro", "Maria"]
+			personas: ["Pedro", "Maria"],
+			registerStatus: false
 		},
 		actions: {
 
