@@ -13,9 +13,9 @@ const Layout = () => {
     <div>
       <BrowserRouter basename={basename}>
         <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
+          {/* <Route exact path='/' element={<Home/>}></Route> */}
           <Route exact path='/*' element={<NotFound/>}></Route>
-          <Route exact path='/login' element={<LogIn/>}></Route>
+          <Route exact path='/' element={<LogIn/>}></Route>
         </Routes>
       </BrowserRouter>
 
